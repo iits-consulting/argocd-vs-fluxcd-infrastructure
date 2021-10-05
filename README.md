@@ -24,16 +24,16 @@ argocd-vs-fluxcd-infrastructure
 │   │     ─  variables.tf
 │   │     ─  versions.tf
 │   │
-│   └─── fluxcd    ---------------->    # FluxCD setup
+│   └─── fluxcd    ----------------->    # FluxCD setup
 │   │     ─  flux-cd helmchart
 │   │
-│   └─── argocd     --------------->    # ArgoCD setup
+│   └─── argocd     ---------------->    # ArgoCD setup
 │         ─  argo-cd helmchart
 │
 │   
-└───fluxcd    --------------------->    # Applications described by Flux
+└───fluxcd    ---------------------->    # Applications described by Flux
 
-│   └─── stages    ---------------->    # Application with different (per-stage) parameters
+│   └─── stages    ----------------->    # Application with different (per-stage) parameters
 │       │
 │       └───development
 │       │     ─  my-application.yml

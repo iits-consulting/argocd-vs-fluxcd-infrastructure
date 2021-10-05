@@ -9,3 +9,47 @@ This is a project with infrastructure, based on:
 [Repo](https://github.com/iits-consulting/argocd-vs-fluxcd-application) with Application used by CD automation
 ### Purposes
 **OTC Event:** [_A battle of GitOps tools: Argo CD vs Flux CD_](https://community.open-telekom-cloud.com/community?id=community_event&sys_id=8a84320fb7763450d15aa7b16b8c0222)
+
+### Repo structure
+```
+argocd-vs-fluxcd-infrastructure
+│
+│   LICENSE
+│   README.md
+│
+└───k8s-cluster
+│   │
+│   └─── terraform    ------------->    # Everything to prepare Environment
+│   │     ─  main.tf
+│   │     ─  variables.tf
+│   │     ─  versions.tf
+│   │
+│   └─── fluxcd    ---------------->    # FluxCD setup
+│   │     ─  flux-cd helmchart
+│   │
+│   └─── argocd     --------------->    # ArgoCD setup
+│         ─  argo-cd helmchart
+│
+│   
+└───fluxcd    --------------------->    # Applications described by Flux
+
+│   └─── stages    ---------------->    # Application objects with different (per-stage) parameters
+│       │
+│       └───development
+│       │     ─  my-application.yml
+│       │
+│       └───production
+│             ─  my-application.yml
+│
+│
+└───argocd    ---------------------->    # Applications described by Argo
+    │
+    └─── stages    ----------------->    # Application objects with different (per-stage) parameters
+        │
+        └───development
+        │     ─  my-application.yml
+        │
+        └───production
+              ─  my-application.yml
+    ...
+```

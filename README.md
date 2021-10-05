@@ -6,7 +6,7 @@ This is a project with infrastructure, based on:
  - [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
  - [FluxCD](https://fluxcd.io)
 
-[Repo](https://github.com/iits-consulting/argocd-vs-fluxcd-application) with Application used by CD automation
+[Repo](https://github.com/iits-consulting/argocd-vs-fluxcd-application) with dummy application and CI that was used here
 ### Purposes
 **OTC Event:** [_A battle of GitOps tools: Argo CD vs Flux CD_](https://community.open-telekom-cloud.com/community?id=community_event&sys_id=8a84320fb7763450d15aa7b16b8c0222)
 

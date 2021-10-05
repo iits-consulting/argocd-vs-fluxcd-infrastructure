@@ -33,7 +33,7 @@ argocd-vs-fluxcd-infrastructure
 │   
 └───fluxcd    --------------------->    # Applications described by Flux
 
-│   └─── stages    ---------------->    # Application objects with different (per-stage) parameters
+│   └─── stages    ---------------->    # Application with different (per-stage) parameters
 │       │
 │       └───development
 │       │     ─  my-application.yml
@@ -44,7 +44,7 @@ argocd-vs-fluxcd-infrastructure
 │
 └───argocd    ---------------------->    # Applications described by Argo
     │
-    └─── stages    ----------------->    # Application objects with different (per-stage) parameters
+    └─── stages    ----------------->    # Application with different (per-stage) parameters
         │
         └───development
         │     ─  my-application.yml

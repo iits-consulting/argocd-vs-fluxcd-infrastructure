@@ -51,5 +51,4 @@ argocd-vs-fluxcd-infrastructure
         │
         └───production
               ─  my-application.yml
-    ...
 ```

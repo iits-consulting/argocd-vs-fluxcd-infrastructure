@@ -19,7 +19,7 @@ argocd-vs-fluxcd-infrastructure
 │
 └───k8s-cluster
 │   │
-│   └─── terraform    ------------->    # Everything to prepare Environment
+│   └─── terraform    -------------->    # Everything to prepare Environment
 │   │     ─  main.tf
 │   │     ─  variables.tf
 │   │     ─  versions.tf

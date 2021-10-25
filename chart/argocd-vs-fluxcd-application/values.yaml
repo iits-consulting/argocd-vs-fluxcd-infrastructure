@@ -1,0 +1,7 @@
+image:
+  name: swr.eu-de.otc.t-systems.com/images/argocd-vs-fluxcd-application
+  tag: 1.7
+
+replicas: 1
+
+redisUrl: "redis:6379"

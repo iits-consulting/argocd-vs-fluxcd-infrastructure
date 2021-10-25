@@ -17,22 +17,12 @@ argocd-vs-fluxcd-infrastructure
 │   LICENSE
 │   README.md
 │
-└───k8s-cluster
+└───chart
 │   │
-│   └─── terraform    -------------->    # Everything to prepare Environment
-│   │     ─  main.tf
-│   │     ─  variables.tf
-│   │     ─  versions.tf
-│   │
-│   └─── fluxcd    ----------------->    # FluxCD setup
-│   │     ─  flux-cd helmchart
-│   │
-│   └─── argocd     ---------------->    # ArgoCD setup
-│         ─  argo-cd helmchart
-│
+│   └─── argocd-vs-fluxcd    ------->    # Application Helm Chart
 │   
 └───fluxcd    ---------------------->    # Applications described by Flux
-
+│
 │   └─── stages    ----------------->    # Application with different (per-stage) parameters
 │       │
 │       └───development

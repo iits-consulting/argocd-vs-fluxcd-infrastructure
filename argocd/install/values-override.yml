@@ -75,3 +75,7 @@ server:
           kind: '*'
       orphanedResources:
         warn: false
+
+controller:
+  args:
+    appResyncPeriod: "7"

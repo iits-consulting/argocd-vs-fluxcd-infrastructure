@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-vs-fluxcd
+  name: argocd-vs-fluxcd-prod
 spec:
   ignoreDifferences:
     - group: apps

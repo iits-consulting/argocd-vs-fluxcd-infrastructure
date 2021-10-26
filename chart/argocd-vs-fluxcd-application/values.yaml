@@ -1,5 +1,5 @@
 image:
-  repository: 100.125.7.25:20202/images/argocd-vs-fluxcd-application
+  name: 100.125.7.25:20202/images/argocd-vs-fluxcd-application
   tag: 1.7
 
 imageCredentials:

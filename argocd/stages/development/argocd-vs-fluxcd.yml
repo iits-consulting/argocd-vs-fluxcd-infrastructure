@@ -21,6 +21,8 @@ spec:
     targetRevision: HEAD
     helm:
       parameters:
+        - name: image.name
+          value: "100.125.7.25:20202/images/argocd-vs-fluxcd-application"
         - name: image.tag
           value: "0.2"
         - name: redisUrl

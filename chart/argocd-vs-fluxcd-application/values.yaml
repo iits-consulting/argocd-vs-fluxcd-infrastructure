@@ -15,3 +15,5 @@ redisUrl: "argocd-vs-fluxcd-redis-master:6379"
 redis:
   global:
     storageClass: "csi-disk"
+  auth:
+    enabled: false

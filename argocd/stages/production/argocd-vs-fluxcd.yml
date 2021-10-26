@@ -20,6 +20,8 @@ spec:
       parameters:
         - name: image.tag
           value: "1.7"
+        - name: redisUrl
+          value: "argocd-vs-fluxcd-prod-redis-master:6379"
   project: argocd-app-prod
   syncPolicy:
     automated:

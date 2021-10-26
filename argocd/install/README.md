@@ -22,9 +22,6 @@ nano values-override.yml
 helm -f values-override.yml -n argocd upgrade --install --create-namespace argocd argo/argo-cd
 ```
 
-#### Add image updater (optional)
-Check [image-updater](https://argocd-image-updater.readthedocs.io/en/stable/install/start/) installation guide.
-
 ## Make changes
 - Pull repo
 - Change `values-override.yml` file

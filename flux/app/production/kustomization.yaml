@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: flux-app-production
+resources:
+  - ../base/
+images:
+  - name: 100.125.7.25:20202/images/argocd-vs-fluxcd-application
+    newName: 100.125.7.25:20202/images/argocd-vs-fluxcd-application
+    newTag: 1.1.0 # {"$imagepolicy": "flux-app-production:app:tag"}

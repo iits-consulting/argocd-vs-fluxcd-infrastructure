@@ -1,0 +1,7 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: app
+spec:
+  image: 100.125.7.25:20202/images/argocd-vs-fluxcd-application
+  interval: 1m0s

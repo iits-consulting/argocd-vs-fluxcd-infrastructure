@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-vs-fluxcd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argocd-vs-fluxcd
+  template:
+    metadata:
+      labels:
+        app: argocd-vs-fluxcd
+    spec:
+      containers:
+        - name: app
+          image: 100.125.7.25:20202/images/argocd-vs-fluxcd-application:latest
+          env:
+            - name: REDIS_URL
+              value: redis:6349
+      imagePullSecrets:
+        - name: otcregistry

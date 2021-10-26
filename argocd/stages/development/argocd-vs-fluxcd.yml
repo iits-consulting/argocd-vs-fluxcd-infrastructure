@@ -4,7 +4,8 @@ metadata:
   name: argocd-vs-fluxcd-dev
   annotations:
     argocd-image-updater.argoproj.io/write-back-method: argocd
-    argocd-image-updater.argoproj.io/image-list: my-app=100.125.7.25:20202/images/argocd-vs-fluxcd-application:0.x
+    argocd-image-updater.argoproj.io/image-list: my-app=100.125.7.25:20202/images/argocd-vs-fluxcd-application
+    argocd-image-updater.argoproj.io/my-app.update-strategy: semver:0.x
 spec:
   ignoreDifferences:
     - group: apps

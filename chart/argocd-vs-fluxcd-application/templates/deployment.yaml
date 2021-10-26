@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           env:
             - name: REDIS_URL
               value: {{ .Values.redis.url }}

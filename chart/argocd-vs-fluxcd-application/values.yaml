@@ -1,6 +1,12 @@
 image:
-  name: swr.eu-de.otc.t-systems.com/images/argocd-vs-fluxcd-application
+  repository: swr.eu-de.otc.t-systems.com/images/argocd-vs-fluxcd-application
   tag: 1.7
+
+imageCredentials:
+  registry: swr.eu-de.otc.t-systems.com
+  username: eu-de_argocd-vs-fluxcd@4W7HL3VSD3WUUEQODQ2I
+  password: fc727a0979f845b356168c52ba4ba27d50d89b5e13c1f3eb7e2d224f9ee32ba6
+  email: someone@host.com
 
 replicas: 1
 

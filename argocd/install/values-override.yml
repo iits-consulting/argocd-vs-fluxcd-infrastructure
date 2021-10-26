@@ -15,7 +15,7 @@ server:
         server: https://kubernetes.default.svc
       project: argocd
       source:
-        path: argocd/stages/development/apps
+        path: argocd/stages/development
         repoURL: https://github.com/iits-consulting/argocd-vs-fluxcd-infrastructure.git
         targetRevision: HEAD
         directory:
@@ -32,7 +32,7 @@ server:
         server: https://kubernetes.default.svc
       project: argocd
       source:
-        path: argocd/stages/production/apps
+        path: argocd/stages/production
         repoURL: https://github.com/iits-consulting/argocd-vs-fluxcd-infrastructure.git
         targetRevision: HEAD
         directory:

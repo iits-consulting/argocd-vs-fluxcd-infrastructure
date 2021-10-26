@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-vs-fluxcd
+spec:
+  ignoreDifferences:
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+        - /spec/replicas
+  destination:
+    name: ''
+    namespace: argocd-vs-fluxcd
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: 'chart/argocd-vs-fluxcd-application'
+    repoURL: https://github.com/iits-consulting/argocd-vs-fluxcd-infrastructure.git
+    chart: argocd-vs-fluxcd-application
+    helm:
+      parameters:
+        - name: image.repository
+          value: iitsc.azurecr.io/images/test-docker-ci
+        - name: image.tag
+          value: test
+  project: argocd-vs-fluxcd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

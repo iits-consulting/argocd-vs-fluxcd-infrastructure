@@ -4,6 +4,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+argocd/install/01-install-argocd.sh
 
 # Crash log files
 crash.log

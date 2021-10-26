@@ -16,7 +16,6 @@ spec:
     path: 'chart/argocd-vs-fluxcd-application'
     repoURL: https://github.com/iits-consulting/argocd-vs-fluxcd-infrastructure.git
     targetRevision: 1.0.0
-    chart: argocd-vs-fluxcd
     helm:
       parameters:
         - name: image.repository

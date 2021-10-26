@@ -18,10 +18,8 @@ spec:
     targetRevision: HEAD
     helm:
       parameters:
-        - name: image.repository
-          value: iitsc.azurecr.io/images/test-docker-ci
         - name: image.tag
-          value: test
+          value: "0.2"
   project: argocd-vs-fluxcd
   syncPolicy:
     automated:

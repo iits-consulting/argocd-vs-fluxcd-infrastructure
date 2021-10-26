@@ -21,4 +21,4 @@ spec:
             - name: REDIS_URL
               value: {{ .Values.redis.url }}
       imagePullSecrets:
-        name: otcregistry
+        - name: otcregistry

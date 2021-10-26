@@ -10,7 +10,7 @@ imageCredentials:
 
 replicas: 1
 
-redisUrl: "redis:6379"
+redisUrl: "argocd-vs-fluxcd-redis-headless:6379"
 
 redis:
   global:

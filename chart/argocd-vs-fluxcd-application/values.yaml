@@ -11,3 +11,7 @@ imageCredentials:
 replicas: 1
 
 redisUrl: "redis:6379"
+
+redis:
+  global:
+    storageClass: "csi-disk"

@@ -17,3 +17,5 @@ redis:
     storageClass: "csi-disk"
   auth:
     enabled: false
+  replica:
+    replicaCount: 1

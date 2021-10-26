@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd-vs-fluxcd-prod
+  argocd-image-updater.argoproj.io/image-list: 100.125.7.25:20202/images/argocd-vs-fluxcd-application/image:1.x
 spec:
   ignoreDifferences:
     - group: apps

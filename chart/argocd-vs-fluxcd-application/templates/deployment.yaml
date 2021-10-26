@@ -19,6 +19,6 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           env:
             - name: REDIS_URL
-              value: {{ .Values.redis.url }}
+              value: {{ .Values.redisUrl }}
       imagePullSecrets:
         - name: otcregistry

@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: argocd-vs-fluxcd-prod
   annotations:
-    argocd-image-updater.argoproj.io/image-list: 100.125.7.25:20202/images/argocd-vs-fluxcd-application:1.x
+    argocd-image-updater.argoproj.io/image-list: my-app=100.125.7.25:20202/images/argocd-vs-fluxcd-application:1.x
 spec:
   ignoreDifferences:
     - group: apps

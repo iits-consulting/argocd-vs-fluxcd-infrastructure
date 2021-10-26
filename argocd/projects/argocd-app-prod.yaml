@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: argocd-vs-fluxcd
+  name: argocd-app-prod
   namespace: argocd
 spec:
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
   destinations:
-    - namespace: argocd-vs-fluxcd
+    - namespace: argocd-app-prod
       server: https://kubernetes.default.svc
   orphanedResources:
     warn: false

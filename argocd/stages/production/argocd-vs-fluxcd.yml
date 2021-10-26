@@ -10,7 +10,7 @@ spec:
         - /spec/replicas
   destination:
     name: ''
-    namespace: argocd-app-dev
+    namespace: argocd-app-prod
     server: 'https://kubernetes.default.svc'
   source:
     path: chart/argocd-vs-fluxcd-application
@@ -19,8 +19,8 @@ spec:
     helm:
       parameters:
         - name: image.tag
-          value: "0.2"
-  project: argocd-app-dev
+          value: "1.7"
+  project: argocd-app-prod
   syncPolicy:
     automated:
       prune: true
